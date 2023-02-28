@@ -1,0 +1,18 @@
+function isLeap(year) {
+    
+    
+    var x4 = year%4;
+    var x100 = year%100;
+    var x400 = year%400;
+    
+    if (x4 !== 0) {
+        console.log("Not leap year.");
+    }
+    if (x4 === 0 & x100 !== 0 ) {
+        console.log("Leap year.");
+    }
+    if (x4 === 0 & x100 === 0 & x400 !== 0) {
+        console.log("Not leap year.");
+       } else {
+        console.log("Leap year.");
+    }
